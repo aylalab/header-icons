@@ -11,8 +11,8 @@ html {
 }
 
 .header {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin: 0;
   background-color: #d05c2e;
   color: #fff;
@@ -22,28 +22,49 @@ body {
   margin: 0;
 }
 
-.header h1 {
-  font-size: 2rem;
+div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  padding: 0;
+  flex-direction: row;
 }
 
 nav ul {
   list-style-type: none;
-  display: inline-flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  font-size: 1.125rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .nav a {
   text-decoration: none;
   color: #fff;
+  background-color: #d05c2e;
   border: 1px solid #a63f38;
-  padding: .5rem 6rem;
+  padding: .5rem 5rem;
   margin: 0;
 }
 
 a:hover {
   background-color: #a63f38;
+}
+
+img {
+  width: 40px;
+}
+
+div {
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: .5em;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 2rem;
+  padding-bottom: 0;
 }
